@@ -23,7 +23,7 @@ const DiscoverPage = () => {
 
   return (
     <>
-      <h2 className='page-title'>Discover</h2>
+      <h2 className='page-title'></h2>
       <div className='page-main'>
         {movies.map((movie) => (
           <div className="movie-container" key={movie.id}>

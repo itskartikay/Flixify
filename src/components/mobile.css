@@ -1,0 +1,41 @@
+
+  
+  /* DiscoverPage, NewReleasesPage, TrendingPage, SearchResultsPage */
+  .page-main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 1rem; /* Reduce margins for mobile */
+  }
+  
+  .movie-container {
+    width: 50%; /* Adjust width for mobile */
+  }
+  
+  .movie-title {
+    width: 100%; /* Ensure movie titles occupy full width */
+  }
+  
+  .page-title {
+    font-size: 2rem; /* Decrease font size for mobile */
+  }
+  
+  /* MovieDetailPage */
+  .details-main {
+    width: 90%; /* Adjust width for mobile */
+  }
+  
+  .details-main img {
+    width: 80%; /* Adjust image width for mobile */
+  }
+  
+  .stream-button {
+    padding: 8px 16px; /* Adjust padding for mobile */
+    font-size: 1rem; /* Decrease font size for mobile */
+  }
+  
+  /* Global */
+  body {
+    font-size: 16px; /* Set base font size for mobile */
+  }
+  

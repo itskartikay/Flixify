@@ -1,5 +1,9 @@
-import React from 'react';
+// App.js
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import "./components/mobile.css"
+
+//components
 import NavBar from './components/NavBar/NavBar';
 import DiscoverPage from './components/DiscoverPage/DiscoverPage';
 import TrendingPage from './components/TrendingPage/TrendingPage';
@@ -8,16 +12,17 @@ import MovieDetailPage from './components/MovieDetailPage/MovieDetailPage';
 import SearchResultsPage from './components/SearchResultsPage/SearchResultsPage';
 
 function App() {
+
   return (
     <Router>
       <div className="App">
-        <NavBar />
+        <NavBar/>
         <Routes>
-          <Route exact path="/" element={<DiscoverPage/>} />
-          <Route path="/trending" element={<TrendingPage/>} />
-          <Route path="/new-releases" element={<NewReleasesPage/>} />
-          <Route path="/movie/:id" element={<MovieDetailPage/>} />
-          <Route path="/search/:query" element={<SearchResultsPage/>} />
+          <Route exact path="/" element={<DiscoverPage />} />
+          <Route path="/trending" element={<TrendingPage />} />
+          <Route path="/new-releases" element={<NewReleasesPage />} />
+          <Route path="/movie/:id" element={<MovieDetailPage />} />
+          <Route path="/search/:query" element={<SearchResultsPage />} />
         </Routes>
       </div>
     </Router>
