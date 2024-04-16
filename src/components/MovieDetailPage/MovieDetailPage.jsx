@@ -1,7 +1,7 @@
+// MovieDetailPage.jsx
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-
-import "./MovieDetailPage.css";
+import './MovieDetailPage.css';
 
 const MovieDetailPage = () => {
   const { id } = useParams();
@@ -16,7 +16,6 @@ const MovieDetailPage = () => {
         }
         const data = await response.json();
         setMovie(data);
-        console.log(data);
       } catch (error) {
         console.error('Error fetching movie:', error);
       }
@@ -30,15 +29,13 @@ const MovieDetailPage = () => {
   };
 
   return (
-    <div>
+    <div className="details-container">
+      <div className="background-image" style={{ backgroundImage: `url(https://image.tmdb.org/t/p/original/${movie?.backdrop_path})` }} />
       {movie && (
         <div className='details-main'>
           <h2>{movie.title}</h2>
-
-          <img className='backdrop' src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}/>
-
-          <img src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} alt={movie.title} />
-          <p>Description : {movie.overview}</p>
+          <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt={movie.title} />
+          <p>{movie.overview}</p>
           <p>Release Date: {movie.release_date}</p>
           <p>Rating: {movie.vote_average}</p>
           <div className="stream-button" onClick={() => streamNow(movie.id)}>Stream Now</div>

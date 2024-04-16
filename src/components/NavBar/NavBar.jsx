@@ -1,3 +1,4 @@
+// NavBar.jsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
@@ -15,11 +16,11 @@ const NavBar = () => {
 
   return (
     <div className="navbar">
-      <h1 className='logo'>Flixify</h1>
+      <Link to="/" className='logo'>Flixify</Link>
       <div className="nav-links">
-        <Link to="/">Discover</Link>
-        <Link to="/trending">Trending</Link>
-        <Link to="/new-releases">New Releases</Link>
+        <Link to="/" className="nav-link">Discover</Link>
+        <Link to="/trending" className="nav-link">Trending</Link>
+        <Link to="/new-releases" className="nav-link">New Releases</Link>
       </div>
       <form className="search-form" onSubmit={handleSearch}>
         <input

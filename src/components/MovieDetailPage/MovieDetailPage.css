@@ -1,5 +1,61 @@
-.backdrop{
+/* MovieDetailPage.css */
+.details-container {
+    position: relative; /* Set relative positioning for the container */
+    min-height: 100vh; /* Ensure the background covers the entire viewport height */
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .background-image {
+    position: absolute; /* Set absolute positioning for the background image */
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-}
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(10px); /* Apply the blur effect to the background image */
+    z-index: -1; /* Ensure the background is behind the content */
+  }
+  
+  .details-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    color: #fff;
+    border-radius: 10px;
+    width: 60rem;
+  }
+  
+  .details-main h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .details-main p {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .details-main img {
+    width: 20rem;
+    border-radius: 5px;
+  }
+  
+  .stream-button {
+    background-color: #2b2727;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .stream-button:hover {
+    background-color: #333;
+  }
+  
