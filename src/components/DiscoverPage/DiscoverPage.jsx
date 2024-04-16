@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'; // Import Link from React Router
 import "../global.css";
+import "../mobile.css"
 
 const DiscoverPage = () => {
   const [movies, setMovies] = useState([]);

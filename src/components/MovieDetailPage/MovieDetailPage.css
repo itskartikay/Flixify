@@ -33,26 +33,38 @@
   }
   
   .details-main h2 {
-    margin-bottom: 1rem;
+    margin: 0;
+    padding: 2rem 0rem;
+  }
+
+  .details-main h3{
+    font-weight: 400;
+    text-align: center;
+    width: 40rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+
+    padding-bottom: 1rem;
   }
   
   .details-main p {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    margin: 0;
     text-align: center;
+    padding-bottom: 1rem;
   }
   
   .details-main img {
     width: 20rem;
-    border-radius: 5px;
+    border-radius: 5%;
   }
   
   .stream-button {
-    background-color: #2b2727;
+    background-color: #c81919;
     color: #fff;
     padding: 0.5rem 1rem;
-    border-radius: 5px;
+    border-radius: 5rem;
     cursor: pointer;
+    margin-bottom: 1rem;
   }
   
   .stream-button:hover {

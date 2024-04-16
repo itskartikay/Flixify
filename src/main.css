@@ -3,7 +3,11 @@
 body{
     font-family: "Noto Sans", sans-serif;
     margin: 0;
-    background-color: black;
+    /* background-color: black; */
     color: white;
+
+    background: linear-gradient(135deg, #3d3c3f, #052c35);
+    background-attachment: fixed; /* Optional: keep the background fixed while scrolling */
+    /* You can adjust other properties like background-size, background-position, etc. as needed */
 }
 

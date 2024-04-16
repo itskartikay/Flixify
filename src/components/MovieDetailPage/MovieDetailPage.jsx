@@ -16,6 +16,7 @@ const MovieDetailPage = () => {
         }
         const data = await response.json();
         setMovie(data);
+        console.log(data);
       } catch (error) {
         console.error('Error fetching movie:', error);
       }
@@ -35,7 +36,7 @@ const MovieDetailPage = () => {
         <div className='details-main'>
           <h2>{movie.title}</h2>
           <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt={movie.title} />
-          <p>{movie.overview}</p>
+          <h3>{movie.overview}</h3>
           <p>Release Date: {movie.release_date}</p>
           <p>Rating: {movie.vote_average}</p>
           <div className="stream-button" onClick={() => streamNow(movie.id)}>Stream Now</div>
