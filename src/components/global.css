@@ -1,0 +1,52 @@
+.page-main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0rem 10rem;
+}
+
+.movie-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 20rem;
+    height: auto;
+
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+
+.movie-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 17.5rem;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.page-title{
+    display: flex;
+    justify-content: center;
+
+    font-size: 3rem;
+}
+
+.stream-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .stream-button:hover {
+    background-color: #0056b3;
+  }
+  
